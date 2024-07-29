@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap 5 cdn [css] -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- bootstrap 5 cdn [js] -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header section -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex" href="#">
+                <img src="https://pngimg.com/uploads/dna/dna_PNG61.png" alt="Health Care Clinic Logo" width="50">
+                <div class="header ms-2">
+                    <span>HEALTH CARE</span>
+                    <div>CLINIC</div>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-5 px-5">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="specialtiesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Specialties
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="specialtiesDropdown">
+                            <li><a class="dropdown-item" href="#">Pediatrics</a></li>
+                            <li><a class="dropdown-item" href="#">gynecology</a></li>
+                            <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="doctorsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Doctors
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="doctorsDropdown">
+                            <li><a class="dropdown-item" href="#">Dr. Muhammed</a></li>
+                            <li><a class="dropdown-item" href="#">Dr. Avinash</a></li>
+                            <li><a class="dropdown-item" href="#">Dr. Geetha</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="btn language">
+                    <button class="btn btn-info">English</button>
+                    <button class="btn text-light">عربي</button>
+                </div>
+
+                <a type="button" class="btn btn-info py-3 ms-4 text-light" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Book An Appointment</a>
+                <!-- Modal -->
+                <div class="modal fade p-5" id="exampleModal" tabindex="-1" aria-labelledby="ModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-head ps-5 d-flex justify-content-between">
+                                <div>
+                                    <h5 class="text-light display-6" id="ModalLabel"><b>Book AnAppointment</b></h5>
+                                    <p>Schedule your appoinment with ease by filling out the form below.</p>
+                                </div>
+                                <span class="close btn btn-rounded text-light" data-bs-dismiss="modal"
+                                    aria-label="Close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="First Name"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Last Name"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="date" class="form-control" placeholder="Date Of Birth"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group d-flex">
+                                                <select class="form-control" style="max-width: 100px;">
+                                                    <option>+91</option>
+                                                    <option>+1</option>
+                                                    <option>+44</option>
+                                                </select>
+                                                <input type="tel" class="form-control" placeholder="Mobile Number"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <select class="form-control" required>
+                                                    <option value="" disabled selected>Gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="date" class="form-control" placeholder="Preferred Date"
+                                                    required>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3"
+                                            placeholder="Any specific requests or concerns"></textarea>
+                                    </div>
+                                    <div class="d-flex mt-4">
+                                        <button type="reset" class="btn form-control w-25 me-3">Reset Form</button>
+                                        <button type="submit" class="btn btn-info px-5">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- First section -->
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>YOUR TRUSTED CLINIC FOR </h1>
+            <h1>COMPREHENSIVE WELLNESS</h1>
+        </div>
+        <div class="hero-image d-flex justify-content-center">
+            <img src="https://www.strunkmedia.com/wp-content/uploads/2017/07/doctors-nurses.jpg" class="doctors"
+                width="1100px" height="500px" alt="Doctors">
+        </div>
+        <div class="d-flex justify-content-between w-100">
+            <button class="btn img-btn find-doctor py-3 px-4">Let's Find <br>
+                Your <br>
+                Doctor
+            </button>
+            <button class="btn img-btn call-anytime">Call Anytime <br> +971 1234567890 | +971 0987654321
+                <span class="btn btn-light ms-2 icon"><i class="fa-solid fa-chevron-right"
+                        style="color: #74C0FC;"></i></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- second section -->
+
+    <section class="second-section py-4">
+        <div class="row">
+            <div class="col about-us-content mx-5 px-5 py-5">
+                <h2 class="text-light">About Us</h2>
+                <p class="text-light" style="text-align: justify;">An esteemed subsidiary of Platinum Healthcare,
+                    setting the pinnacle of unmatched healthcare excellence in the UAE. Our unwavering commitment
+                    reflects in our delivery of exceptional medical services, infused with genuine empathy. With
+                    seamless integration of U.S. healthcare standards, we ensure our patients in the UAE receive
+                    meticulously tailored treatments backed by the latest in medical technology.</p>
+                <button class="btn btn-info">Read More</button>
+            </div>
+            <div class="col-3 what-they-say p-0">
+                <button class="btn btn-info px-5">Hear <br> What <br> They Say <br>
+                    <span><i class="fa-solid fa-arrow-down-long fa-xl mt-5" style="color: #ffffff;"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- images section -->
+
+        <div class="row">
+            <div class="col-3">
+                <img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/group-of-happy-doctors-meeting-at-hospital-office_vk3wwzkb_thumbnail-1080_01.png"
+                    height="200px" width="" alt="">
+            </div>
+            <div class="col-3">
+                <img src="https://heal-responsibly.com/wp-content/uploads/2020/08/33f72-adobestock_224173795.jpeg"
+                    height="200px" width="" alt="">
+
+            </div>
+            <div class="col-3">
+                <img src="https://healingthebody.ca/wp-content/uploads/2014/10/Fotolia_87154587_Subscription_Monthly_XL.jpg"
+                    height="200px" width="" alt="">
+
+            </div>
+            <div class="col-3 p-0">
+                <img src="https://images.wisegeek.com/group-of-doctors-and-nurses-in-scrubs.jpg" height="200px" width=""
+                    alt="">
+
+            </div>
+        </div>
+
+        <!-- card section -->
+
+        <div class="row my-4 d-flex justify-content-between">
+            <div class="col-2 bg-light d-flex justify-content-center p-5">
+                <button class="icon btn btn-lg btn-secondary">
+                    <i class="fa-solid fa-kit-medical fa-2xl mt-5" style="color: #74C0FC;"></i>
+                    <h6 class="mt-4">General Medicines</h6>
+                </button>
+            </div>
+            <div class="col-2 bg-light d-flex justify-content-center p-5">
+                <button class="icon btn btn-lg btn-secondary">
+                    <i class="fa-solid fa-person-breastfeeding fa-2xl mt-5" style="color: #74C0FC;"></i>
+                    <h6 class="mt-4">Pediatritians</h6>
+                </button>
+            </div>
+            <div class="col-2 bg-light d-flex justify-content-center p-5">
+                <button class="icon btn btn-lg btn-secondary">
+                    <i class="fa-solid fa-lungs fa-2xl mt-5" style="color: #74C0FC;"></i>
+                    <h6 class="mt-4">Internal Medicine</h6>
+                </button>
+            </div>
+            <div class="col-2 bg-light d-flex justify-content-center p-5">
+                <button class="icon btn btn-lg btn-secondary">
+                    <i class="fa-regular fa-face-grin-stars fa-2xl mt-5" style="color: #74C0FC;"></i>
+                    <h6 class="mt-4">Dermatology</h6>
+                </button>
+            </div>
+            <div class="col-2 bg-light d-flex justify-content-center p-5">
+                <button class="icon btn btn-lg btn-secondary">
+                    <i class="fa-solid fa-flask fa-2xl mt-5" style="color: #74C0FC;"></i>
+                    <h6 class="mt-4">Lab Services</h6>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- doctors section -->
+
+    <div class="section m-5">
+        <h2 class="doctor-heading">Our Doctors</h2>
+        <p>Our experienced health care professionals committed to your well-being</p>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="https://leman-clinic.ch/wp-content/uploads/2018/11/02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Geetha</h5>
+                    <p class="card-text">Pediatritian</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-info">Book an appoinment</a>
+                        <a href="#" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://leman-clinic.ch/wp-content/uploads/2018/11/02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Geetha</h5>
+                    <p class="card-text">Pediatritian</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-info">Book an appoinment</a>
+                        <a href="#" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://leman-clinic.ch/wp-content/uploads/2018/11/02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Geetha</h5>
+                    <p class="card-text">Pediatritian</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-info">Book an appoinment</a>
+                        <a href="#" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://leman-clinic.ch/wp-content/uploads/2018/11/02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Geetha</h5>
+                    <p class="card-text">Pediatritian</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-info">Book an appoinment</a>
+                        <a href="#" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://leman-clinic.ch/wp-content/uploads/2018/11/02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Geetha</h5>
+                    <p class="card-text">Pediatritian</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-info">Book an appoinment</a>
+                        <a href="#" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer section -->
+
+    <footer class="p-5">
+        <div class="footer-container d-flex">
+            <div class="">
+                <div class="row">
+                    <iv class="col">
+                        <div class="d-flex">
+                            <img src="https://pngimg.com/uploads/dna/dna_PNG61.png" height="50px"
+                                alt="Health Care Clinic Logo">
+                            <div class=" text-light">
+                                <span>HEALTH CARE</span>
+                                <div>CLINIC</div>
+                            </div>
+                        </div>
+                        <p class="text-light mt-5">Also Find Us On</p>
+                        <div className="">
+                            <span class="btn btn-light icon">
+                                <a class="icons" href='https://www.youtube.com/' target='_blank'>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </span>
+                            <span class="btn btn-light icon">
+                                <a class="icons" href='https://github.com' target='_blank'>
+                                    <i class="fa-brands fa-linkedin"></i> </a>
+                            </span>
+                            <span class="btn btn-light icon">
+                                <a class="icons" href='https://www.facebook.com/' target='_blank'>
+                                    <i class="fa-brands fa-facebook"></i> </a>
+                            </span>
+                            <span class="btn btn-light icon">
+                                <a class="icons" href='https://www.instagram.com/' target='_blank'>
+                                    <i class="fa-brands fa-instagram"></i> </a>
+                            </span>
+                        </div>
+                    </iv>
+                    <div class="col ms-5">
+                        <div class="text-light">
+                            <h4 class="foot-head">Quick Links</h4>
+                            <ul class="d-flex flex-column">
+                                <span><a class="text-decoration-none text-light" href="#">Home</a></span>
+                                <span><a class="text-decoration-none text-light" href="#">About Us</a></span>
+                                <span><a class="text-decoration-none text-light" href="#">Specialties</a></span>
+                                <span><a class="text-decoration-none text-light" href="#">Doctors</a></span>
+                                <span><a class="text-decoration-none text-light" href="#">Contact Us</a></span>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col ms-5">
+                        <div class="text-light ">
+                            <h4 class="foot-head">Specialties</h4>
+                            <div class="d-flex">
+                                <ul>
+                                    <span><a class="text-decoration-none text-light" href="#">Clinical
+                                            psychology</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Dentistry</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Dermatology /
+                                            Cosmetology</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">ENT</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Family Medicine</a></span>
+                                    <span><a class="text-decoration-none text-light"
+                                            href="#">Gastroenterology</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">General
+                                            Medicines</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">General Surgery</a></span>
+
+                                </ul>
+                                <ul>
+                                    <span><a class="text-decoration-none text-light" href="#">Gynecology /
+                                            Obstetrics</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Internal
+                                            Medicine</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Ophthalmology</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Orthopedics</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Pediatrics</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Physiotherapy</a></span>
+                                    <span><a class="text-decoration-none text-light" href="#">Home Care</a></span>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ms-5 ">
+                        <div class="text-light ">
+                            <h4 class="foot-head">Contact Details</h4>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-location-dot me-2 mt-1" style="color: #74C0FC;"></i>
+                                <address>
+                                    Corporate Office #1008 <br>
+                                    Julphar Tower, Dubai <br>
+                                    UAE
+                                </address>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-phone me-2 mt-1" style="color: #74C0FC;"></i>
+                                <p>+971 4 529 4839</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-envelope me-2 mt-1" style="color: #74C0FC;"></i>
+                                <p>info@clinic12.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <p class="text-light">UAE Emergency Service: Police - Call 999 | Ambulance - Call 998</p>
+            <p class="text-light">&copy; 2024 healthcareclinic | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

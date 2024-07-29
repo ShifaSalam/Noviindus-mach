@@ -1,0 +1,110 @@
+.header {
+    color: #041d7e;
+    font-weight: bold;
+    font-size: smaller;
+}
+nav{
+    background-color: #dff6ff;
+
+}
+
+.nav-link:hover {
+    color: rgb(0, 179, 255) !important;
+    border-bottom: 2px solid rgb(0, 179, 255);
+}
+
+.language {
+    background-color: rgb(35, 47, 113);
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.792);
+}
+
+.modal-head,
+.modal-body {
+    background-color: #234e82;
+}
+
+.modal p {
+    color: rgb(106, 162, 197);
+    font-size: small;
+    margin-top: -10px;
+}
+
+.form-control {
+    background-color: rgb(211, 238, 255);
+}
+
+footer {
+    background-color: #234e82;
+}
+
+.icons {
+    color: black;
+}
+
+.icon {
+    border-radius: 100%;
+}
+
+.foot-head {
+    border-bottom: 1px solid aqua;
+}
+
+.doctors {
+    border-radius: 20px;
+}
+
+
+.hero-section {
+    background-color: #dff6ff;
+}
+
+.hero-content h1 {
+    color: #003f7d;
+    margin-left: 230px;
+}
+
+.hero-buttons {
+    gap: 20px;
+}
+
+.img-btn {
+    color: #ffffff;
+    background-color: #4fbdfc;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.find-doctor {
+    position: relative;
+    top: -130px;
+    left: 250px;
+    border-radius: 10px;
+}
+
+.call-anytime {
+    position: relative;
+    top: -130px;
+    right: 250px;
+}
+
+.second-section{
+    background-image: url('https://media01.stockfood.com/largepreviews/NDAzMTEzMDI2/13003646-A-light-blue-background.jpg');
+}
+.what-they-say{
+    position: relative;
+    top: 100px;
+}
+.col-2{
+    border-radius: 15px;
+}
+.doctor-heading{
+    color: #003f7d;
+}
+.card{
+    border-radius: 10px;
+}
